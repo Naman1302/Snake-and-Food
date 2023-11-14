@@ -70,7 +70,7 @@ public class Main {
 
             newGame.refresh();
             if(newGame.isGameOver()){
-                System.out.println("Moved out of bound");
+                System.out.println("Game Over!!");
                 break;
             }
         }
