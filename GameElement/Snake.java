@@ -31,6 +31,8 @@ public class Snake {
    public void grow(Box newBox) {
         /* When snake eats food it's length will grow */
         SnakeBody.add(newBox);
+       /*set this newBox of SNAKE BOX type*/
+        newBox.setBoxType(BoxType.SNAKE_BOX);
        /* The head will now point to this new box*/
         this.setHead(newBox);
         System.out.println("Yummy!!");
