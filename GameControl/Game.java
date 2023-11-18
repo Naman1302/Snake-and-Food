@@ -59,7 +59,7 @@ public class Game {
                 this.setGameOver(true);
             } else {
                 if (newBox.getBoxType() == BoxType.FOOD_BOX) {
-                    player.grow();
+                    player.grow(newBox);
                     grid.generateFood();
                 } else {
                     player.move(newBox);
