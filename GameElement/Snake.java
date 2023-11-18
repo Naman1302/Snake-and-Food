@@ -28,9 +28,11 @@ public class Snake {
 
     /* Methods for snake */
 
-    public void grow() {
+   public void grow(Box newBox) {
         /* When snake eats food it's length will grow */
-        SnakeBody.add(head);
+        SnakeBody.add(newBox);
+       /* The head will now point to this new box*/
+        this.setHead(newBox);
         System.out.println("Yummy!!");
     }
 
