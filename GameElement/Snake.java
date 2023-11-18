@@ -14,7 +14,7 @@ public class Snake {
         head = startPos;
         SnakeBody.add(head);
         head.setBoxType(BoxType.SNAKE_BOX);
-        System.out.println("Snake generated");
+        System.out.println("Snake generated at " + startPos.getRow()+", "+startPos.getColumn());
     }
     /* Getters and setters of SnakeBody */
 
